@@ -1,13 +1,9 @@
 """ Tests for the compute module
 """
-from nose.tools import assert_equal
 
 from sprint_tutorial.compute import my_sum
+import pytest
 
-#run nosetests
-
-def test_my_sum1():
-    assert_equal(my_sum(3, 5), 8)
-
-def test_my_sum2():
-    assert_equal(my_sum(5, 5), 10)
+def test_my_sum():
+    assert my_sum(0, 0) == 0
+    assert my_sum(3, 0) == 3
